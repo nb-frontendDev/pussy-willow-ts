@@ -1,1 +1,2 @@
-console.log('ここにコードを追加します');
+"use strict";
+console.log('ここにコードを追加します!');
