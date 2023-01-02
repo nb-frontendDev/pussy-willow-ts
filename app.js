@@ -22,4 +22,16 @@ function printEmployeeInfomation(emp) {
         console.log("startDate: " + emp.startDate);
     }
 }
-printEmployeeInfomation(e1);
+function moveANimal(animal) {
+    let speed;
+    switch (animal.type) {
+        case 'bird':
+            speed = animal.flySpeed;
+            break;
+        case 'horse':
+            speed = animal.runningSpeed;
+            break;
+    }
+    console.log('移動速度' + speed);
+}
+moveANimal({ type: 'bird', flySpeed: 10 });

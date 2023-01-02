@@ -45,4 +45,34 @@ function printEmployeeInfomation(emp: UnknownEmployee) {
     }
 }
 
-printEmployeeInfomation({name:'Manu', startDate: new Date()});
+// 判別可能なUnion型
+interface Bird { 
+    type: 'bird',
+    flySpeed: number;
+}
+
+interface Horse { 
+    type: 'horse',
+    runningSpeed: number;
+}
+
+type Animal = Bird | Horse;
+
+function moveANimal(animal: Animal) {
+    let speed;
+    switch (animal.type) { 
+        case 'bird':
+            speed = animal.flySpeed;
+            break;
+        case 'horse':
+            speed = animal.runningSpeed;
+            break;
+    }
+    console.log('移動速度' + speed);
+    
+}
+moveANimal({type:'bird', flySpeed:10})
+
+
+
+
