@@ -84,4 +84,15 @@ result.split(' ')
 // const useInputElement = document.getElementById('user-input')! as HTMLInputElement;
 // useInputElement.value = 'こんにちは';
 
-//関数オーバーロード
+
+//　オプショナルチェイン
+const fetchedUserData = {
+    id: 'u1',
+    name: 'user1',
+    job: {
+        title: 'Developer',
+        description: 'Typescript',
+    },
+}
+
+console.log(fetchedUserData?.job?.title);
