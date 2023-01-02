@@ -73,6 +73,9 @@ function moveANimal(animal: Animal) {
 }
 moveANimal({type:'bird', flySpeed:10})
 
+// 型キャスト
+const useInputElement = document.getElementById('user-input')! as HTMLInputElement;
 
+useInputElement.value = 'こんにちは';
 
 
