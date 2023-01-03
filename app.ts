@@ -96,3 +96,10 @@ const fetchedUserData = {
 }
 
 console.log(fetchedUserData?.job?.title);
+
+// Null合体演算子
+const userInput = '';
+
+const storedDate = userInput ?? 'DEFAULT';
+
+console.log(storedDate);
