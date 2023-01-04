@@ -1,2 +1,2 @@
 "use strict";
-const names = ['Max', 'Manuel'];
+const names = [];
