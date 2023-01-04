@@ -1,1 +1,1 @@
-console.log('generics')
+const names = ['Max', 'Manuel'];
