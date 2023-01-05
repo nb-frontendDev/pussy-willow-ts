@@ -14,5 +14,5 @@ function merge<T, U>(objA: T, ojbB: U) {
     return Object.assign(objA, ojbB);
 }
 
-const mergedObj = merge({ name: 'Max', hobbies: ['Sports'] }, { age: 30 });
-console.log(mergedObj.age);
+const mergedObj = merge({ name: 'Max', hobbies: ['Sports'] },30);
+console.log(mergedObj);
