@@ -20,4 +20,3 @@ function countAndDescribe(element) {
     }
     return [element, descriptionText];
 }
-console.log(countAndDescribe([]));
