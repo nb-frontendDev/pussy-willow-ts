@@ -1,44 +1,44 @@
 // 高度な型　交差型
-type Admin = {
-    name: string;
-    privileges: string[];
-}
+// type Admin = {
+//     name: string;
+//     privileges: string[];
+// }
 
-type Employee = {
-    name: string;
-    startDate: Date;
-}
+// type Employee = {
+//     name: string;
+//     startDate: Date;
+// }
 
-type ElevatedEmployee = Admin & Employee;
+// type ElevatedEmployee = Admin & Employee;
 
-const e1: ElevatedEmployee = {
-    name: 'Max',
-    privileges: ['create-server'],
-    startDate: new Date,
-}
+// const e1: ElevatedEmployee = {
+//     name: 'Max',
+//     privileges: ['create-server'],
+//     startDate: new Date,
+// }
 
-type Combinable = string | number;
-type Numeric = number | boolean;
+// type Combinable = string | number;
+// type Numeric = number | boolean;
 
-type Universal = Combinable & Numeric;
+// type Universal = Combinable & Numeric;
 
 
 // 高度な型　型ガード
 
-function add(a: number, b: number): number;
-function add(a: string, b: string): string;
-function add(a: string, b: number): string;
-function add(a: number, b: string): string;
-function add(a: Combinable, b: Combinable) { 
-    if (typeof a === 'string' || b === 'string') {
-        return a.toString() + b.toString();
-    } else { 
-        return Number(a) + Number(b);
-    }
-}
+// function add(a: number, b: number): number;
+// function add(a: string, b: string): string;
+// function add(a: string, b: number): string;
+// function add(a: number, b: string): string;
+// function add(a: Combinable, b: Combinable) { 
+//     if (typeof a === 'string' || b === 'string') {
+//         return a.toString() + b.toString();
+//     } else { 
+//         return Number(a) + Number(b);
+//     }
+// }
 
-const result = add('Hello', 1);
-result.split(' ')
+// const result = add('Hello', 1);
+// result.split(' ')
 
 // type UnknownEmployee = Employee | Admin;
 
@@ -86,20 +86,22 @@ result.split(' ')
 
 
 //　オプショナルチェイン
-const fetchedUserData = {
-    id: 'u1',
-    name: 'user1',
-    job: {
-        title: 'Developer',
-        description: 'Typescript',
-    },
-}
+// const fetchedUserData = {
+//     id: 'u1',
+//     name: 'user1',
+//     job: {
+//         title: 'Developer',
+//         description: 'Typescript',
+//     },
+// }
 
-console.log(fetchedUserData?.job?.title);
+// console.log(fetchedUserData?.job?.title);
 
 // Null合体演算子
-const userInput = '';
+// const userInput = '';
 
-const storedDate = userInput ?? 'DEFAULT';
+// const storedDate = userInput ?? 'DEFAULT';
 
-console.log(storedDate);
+// console.log(storedDate);
+
+console.log('実行中');
